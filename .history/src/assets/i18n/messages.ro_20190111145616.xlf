@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="e647a65b66b5fb87fb726e97e573a134259f89c2" datatype="html">
+        <source>
+  Welcome to hell!
+</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">title</note>
+      </trans-unit>
+      <trans-unit id="301f0ed5003a7ef876118150219fd1429610a846" datatype="html">
+        <source>
+  A random message
+</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+        <note priority="1" from="description">randomMessage</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
