@@ -1,0 +1,11 @@
+{
+	"demo": {
+		"greeting": "Salut {name}!",
+		"text": "Un text aleator",
+		"title": "Bun venit in iad!"
+	},
+  "pluralization": {
+    "things": "{count, plural, =0{Este} one{Este} other{Sunt}} {count, plural, =0{} one{un} other{mai multe}} {count, plural, =0{nimic} one{lucru} other{lucruri}}",
+    "people": "{gender, select, male{Numele lui este} female{Numele ei este} other{Numele lor sunt }} {name}"
+  }
+}

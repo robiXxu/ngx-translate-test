@@ -1,7 +1,26 @@
-<h2 translate>
-  Welcome to hell!
-</h2>
+<div>
+  <!-- translation: translation pipe -->
+  <h1>{{ 'demo.title' | translate }}</h1>
 
-<p translate>
-  A random message
-</p>
+  <!-- translation: directive (key as attribute)-->
+  <p [translate]="'demo.text'"></p>
+
+  <!-- translation: directive (key as content of element) -->
+  <p translate>demo.text</p>
+</div>
+
+
+<!-- translation: translation pipe -->
+<p>{{ 'demo.greeting' | translate:{'name':'robiXxu'} }}</p>
+
+<!-- translation: directive (key as attribute) -->
+<!-- Not working with ngx-translate-messageformat-compiler -->
+<!-- <p [translate]="'demo.greeting'" [translateParams]="{name: 'robiXxu'}"></p> -->
+
+<!-- translation: directive (key as content of element)-->
+<p translate [translateParams]="{name: 'robiXxu'}">demo.greeting</p>
+
+<app-plural></app-plural>
+
+<button (click)="useLanguage('ro')">ro</button>
+<button (click)="useLanguage('en')">en</button>

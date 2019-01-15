@@ -6,9 +6,13 @@ import { TranslateService } from '@ngx-translate/core'
   templateUrl: './app.component.html'
 })
 export class AppComponent {
-  param = { value: 'world' };
-  constructor(translate: TranslateService) {
-    translate.setDefaultLang('en');
-    translate.use('en');
+  constructor(private translate: TranslateService) {
+    this.translate = translate;
+    this.translate.setDefaultLang('en');
+    this.translate.use('en');
+  }
+
+  useLanguage(language: string) {
+    this.translate.use(language);
   }
 }
